@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VueJs Hello World Example</title>
+</head>
+<body>
+
+<div id="app">
+    {{ message }}
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+
+<script>
+    // Initialize new Vue instance
+    var app = new Vue({
+        //css selector of html dom element
+        el: '#app',
+        // initialize application data
+        data: {
+            message: 'Hello Kiran babu!'
+        },
+        // ready will be fired during application load like document ready in jquery
+        ready: function(){
+            console.log('VueJS ready');
+
+        },
+        method:{
+
+        }
+    })
+</script>
+
+</body>
+</html>
